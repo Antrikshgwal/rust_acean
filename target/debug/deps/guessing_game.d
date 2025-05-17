@@ -1,5 +1,5 @@
-C:\rustcean\guessing_game\target\debug\deps\guessing_game.exe: src\main.rs
+C:\Users\antri\Rust\target\debug\deps\guessing_game.exe: src\main.rs
 
-C:\rustcean\guessing_game\target\debug\deps\guessing_game.d: src\main.rs
+C:\Users\antri\Rust\target\debug\deps\guessing_game.d: src\main.rs
 
 src\main.rs:
