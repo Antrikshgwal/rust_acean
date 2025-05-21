@@ -23,7 +23,7 @@ fn main() {
      // Now what i'm about to do is called a pro gamer move: Shadowing - by shadowing, a variable can be reused, like here i'm going to convert guess, which is a string, into a number type, u32 more specifically.
     // this feature is often used when you want to convert a value from one type to another type.
 
-// // Parse method returns the Result enum which contains two variants Ok and err
+// // Parse method returns the Result enum which contains two variants: Ok and err
         let guess: u32 = match guess.trim().parse() {
             Ok(num)=>num,
             Err(_)=>continue,
