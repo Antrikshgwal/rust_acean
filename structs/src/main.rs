@@ -1,31 +1,44 @@
+use std::fs::File;
+// use std::io::ErrorKind;
+use std::io::{self,Read};
 fn main() {
-    struct Bowler_stats {
-        name: String,
-        matches: u64,
-        wickets: u64,
-        retired:bool,
-        best: (u32, u32),
-    }
 
-    let Stark = Bowler_stats {
-        name: String::from("Mitchell Stark"),
-        wickets: 382,
-        retired: false,
-        best:(6/48)
+    // get_username_from_file();
+// let greeting_file_result = File::open("hello.txt");
+// match greeting_file_result {
+//     Ok(file) => file,
+//     Err(error) =>  match error.kind() {
+//         ErrorKind::NotFound => match File::create("hello.txt") {
+//             Ok(fc) => fc ,
+//             Err(error) => panic!("Error creating file {e:?}"),
+//         },
+//         _ => {
+//             panic!("Problem opening the file : {error:?}")
+//         }
+//     }
+// }
 
-    }
-    let Steyn = Bowler_stats{
-        name:String::from("Dale Steyn"),
-        ..Stark
-    }
+// let greeting_file_result = File::open("hello.txt").expect("Problem opening the file");
 
 }
 
-fn build_bowler(String: name, wickets:u64)->Bowler_stats{
-Bowler_stats{
-    name,
-    wickets,
-    retired:false,
-    best:(6,48),
+pub trait Summary {
+    fn Summarize(&self) -> String;
+    
 }
-}
+
+// fn get_username_from_file() -> Result<String, io::Error> {
+//     let username_result = File::open("hello.txt");
+
+//     let mut username_file = match username_result {
+//         Ok(file) => file,
+//         Err(error) => return Err(error),
+//     };
+
+//     let mut username = String::new();
+
+//     match username_file.read_to_string(&mut username) {
+//         Ok(_) => Ok(username),
+//         Err(error) => Err(error),
+//     }
+// }
