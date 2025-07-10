@@ -1,7 +1,7 @@
 [package]
-name = "revision"
+name = "env_var"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-rand = "0.8.5"
+dotenv = "0.15.0"
